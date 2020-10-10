@@ -2,15 +2,25 @@
 
 public class FileReader : MonoBehaviour
 {
-    public TextAsset jsonFile;
+    public TextAsset resourceData;
+    public TextAsset inputData;
 
     void Start()
     {
-        Employees employeesInJson = JsonUtility.FromJson<Employees>(jsonFile.text);
+        ResourceProducts productsInJson = JsonUtility.FromJson<ResourceProducts>(resourceData.text);
+        NonSynchronizedProducts inputDataInJson = JsonUtility.FromJson<NonSynchronizedProducts>(inputData.text);
 
-        foreach (Employee employee in employeesInJson.employees)
+        foreach (NonSynchronizedProduct product in inputDataInJson.products)
         {
-            Debug.Log("Found employee: " + employee.firstName + " " + employee.lastName);
+            foreach (ResourceProduct item in productsInJson.products)
+            {
+                if (product.option.ToString() == item.qty.ToString())
+                {
+                    Debug.Log(item.id1c.ToString());
+                }
+            }
         }
+
+        
     }
 }

@@ -242,7 +242,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cb3826b8dcd65c1489f8e5b5cb40e841, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  jsonFile: {fileID: 4900000, guid: 680f5c5c10c172b46a6051c01ab235de, type: 3}
+  resourceData: {fileID: 4900000, guid: cc7e2da7c9dfbc54d8c08ba1a745e5d8, type: 3}
+  inputData: {fileID: 4900000, guid: 680f5c5c10c172b46a6051c01ab235de, type: 3}
 --- !u!4 &815494820
 Transform:
   m_ObjectHideFlags: 0

@@ -5,7 +5,11 @@ using UnityEngine;
 [System.Serializable]
 public class Employee
 {
-    //these variables are case sensitive and must match the strings "firstName" and "lastName" in the JSON.
-    public string firstName;
-    public string lastName;
+    public string code;
+    public string id1c;
+    public string title;
+    public string price;
+    public string qty;
+    public string rrc;
+    public string category;
 }
